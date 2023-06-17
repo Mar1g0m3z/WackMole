@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       score += 1;
       document.querySelector(".sb__score").innerHTML = score;
-      popupLength -= popupLength / 30;
+      popupLength -= popupLength / 20;
 
       clearTimeout(hideTimeout);
       hideMole(event.target);
