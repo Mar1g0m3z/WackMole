@@ -1,0 +1,111 @@
+/* Your code here */
+body{
+  cursor: url(hammer\ 1.cur), auto;
+background-image: url(background.png);
+background-repeat: no-repeat;
+background-size: cover;
+zoom: 0.65;
+}
+body.clicked {
+  cursor: url(hammer\ 2.cur), auto
+}
+#startButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+    height: 50px;
+    font-size: 24px;
+}
+
+#resetButton {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+    width: 150px;
+      height: 50px;
+      font-size: 24px;
+}
+.logo{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+}
+.pf{
+  display: grid; grid-area: 1/1/2/4;
+  display: inline-block;
+  position: relative;
+
+
+}
+.wgs {
+height: 600px;
+width: 800px;
+display: inline-block;
+position: relative;
+overflow: hidden;
+}
+
+
+
+
+.hill {
+  position: absolute;
+  bottom:1px;
+  z-index: 1;
+left: 201px;
+
+}
+
+.gcMole {
+  position: absolute;
+  top: 222px;
+  left: 210.5px;
+  transition: margin-top;
+  transition-delay: .25s;
+  transition-duration: .25s;
+  z-index: 0;
+
+
+}
+
+
+.mole--hidden{
+position: absolute;
+
+  margin-top: 605px;
+
+}
+
+
+ .sb {
+  background-color: rgb(237, 214, 100);
+  opacity: 1;
+  border-bottom: 1px solid #1f6959;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  font-size: 36px;
+  bottom:0;
+  padding: 10px 20px;
+}
+
+ .sb__mole-counter {
+  flex: 1 0 0;
+  text-align: right;
+}
+
+.sb__score-holder {
+  flex: 1 0 0;
+}
+ .sb__game-over--hidden {
+  display: none;
+}
+
+
+
+.gcMole--clicked {
+  content: url("hit-mole-head.gif");
+
+}
